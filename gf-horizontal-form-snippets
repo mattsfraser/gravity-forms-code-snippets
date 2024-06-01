@@ -1,0 +1,17 @@
+.gw-horizontal-form_wrapper .ginput_container input,
+.gw-horizontal-form_wrapper .ginput_container select,
+.gw-horizontal-form_wrapper #field_submit input.button {
+	height: 2.4rem;
+}
+
+.gw-horizontal-form_wrapper #field_submit input.button {
+	padding: 0 1.4rem;
+}
+
+.gw-horizontal-form_wrapper .gform_fields {
+	grid-column-gap: 1vw !important;
+}
+
+.gw-horizontal-form_wrapper .ginput_complex span:not(:first-child) {
+	padding-left: 1vw !important;
+}
