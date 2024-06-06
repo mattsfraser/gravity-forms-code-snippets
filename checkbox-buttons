@@ -1,0 +1,56 @@
+/* Buttonize Checkbox Fields */
+.gform_wrapper .buttonized-checkbox .gfield_checkbox .gchoice {
+    position: relative;
+    text-align: center;
+}
+
+.gform_wrapper .buttonized-checkbox input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.gform_wrapper .buttonized-checkbox .gfield_checkbox label {
+    display: block !important;
+    position: relative;
+    max-width: 100%;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 7px solid #3f3f3f; /* Your border color */
+    background-color: #dcd5ce; /* Your background color */
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.gform_wrapper .buttonized-checkbox input[type="checkbox"]:focus + label {
+    border-color: #040404; /* Your focus border color */
+}
+
+.gform_wrapper .buttonized-checkbox input[type="checkbox"]:checked + label {
+    border-color: #040404; /* Your checked border color */
+    background-color: #d7d7d7; /* Your checked background color */
+    color: #333; /* Your checked text color */
+    overflow: hidden;
+}
+
+.gform_wrapper .buttonized-checkbox input[type="checkbox"]:checked + label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -.75em;
+    right: -.75em;
+    left: auto;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #e1b653; /* Your checked indicator color */
+    border-radius: 0;
+    border: 0;
+    transform: rotate(45deg);
+}
+
+.gform_wrapper .buttonized-checkbox .gfield_checkbox label::before {
+    display: none;
+}
